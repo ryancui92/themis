@@ -22,6 +22,9 @@ export default defineConfig({
     },
     chunkSizeWarningLimit: 10000,
   },
+  optimizeDeps: {
+    exclude: ['vue'],
+  },
   plugins: [
     vue(),
     vueJsx(),
