@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "packageManager": "pnpm@8.15.3",
   "sideEffects": false,
   "scripts": {
     "type-check": "vue-tsc",
