@@ -1,6 +1,6 @@
 {
   "name": "@ryancui-/themis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -16,7 +16,8 @@
     "docs:dev": "npm run meta:update && vitepress dev packages --port 3456",
     "docs:build": "npm run meta:update && vitepress build packages",
     "meta:update": "tsx packages/metadata/scripts/update.ts",
-    "build": "npm run meta:update && vite build"
+    "build": "npm run meta:update && vite build",
+    "pbl": "npm run build && npm publish --access public --registry=https://registry.npmjs.org"
   },
   "exports": {
     ".": {

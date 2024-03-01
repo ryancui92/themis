@@ -20,10 +20,10 @@ export default defineConfig({
       fileName: 'index',
       formats: ['es', 'cjs'],
     },
+    rollupOptions: {
+      external: ['vue'],
+    },
     chunkSizeWarningLimit: 10000,
-  },
-  optimizeDeps: {
-    exclude: ['vue'],
   },
   plugins: [
     vue(),
